@@ -1,0 +1,123 @@
+.drawing-area {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    z-index: 10;
+    /* width: 200px; */
+    transform: translateX(-50%);
+    /* height: 300px; */
+    border: 1px dotted #ccc;
+}
+
+.canvas-container {
+    /* border: 2px solid red; */
+    /* width: ; */
+    height: inherit;
+    position: relative;
+    user-select: none;
+}
+
+#tshirt-div {
+    width: fit-content;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#tshirt-div > img {
+    height: 100%;
+}
+#canvas {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    user-select: none;
+    cursor: default;
+}
+.order_main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    padding: 1rem;
+}
+.order-success {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.order-success img {
+    width: 130px;
+    /* margin: auto; */
+}
+
+.order-success h5 {
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.order-item h6 {
+    font-weight: 500;
+}
+.order-price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.order-price h6 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.order-price > div {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.addtoCartabtn {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.drawerMain {
+    position: relative;
+}
+
+.emptyBorder{
+    width: 100%;
+    border: .5px solid gray;
+    margin-block: 10px;
+}
+
+.drawerDiv {
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    width: 300px;
+
+    border: 1px dotted ;
+    right: -300px;
+    transition: 0.4s ease-out;
+    top: 0;
+}
+
+.menu-open {
+    right: 0;
+}
+
+.closeBtn {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+}

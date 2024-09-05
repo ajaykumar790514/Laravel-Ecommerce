@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/jdk8cpc.css");
+
+@import url("../../node_modules/apexcharts/dist/apexcharts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "source-sans-pro", sans-serif;
+}
+.ProseMirror:focus {
+    outline: none;
+}
+
+.tiptap ul p,
+.tiptap ol p {
+    display: inline;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+    font-size: 14px;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+}
+
+#printable,
+#printable * {
+    visibility: visible;
+}
+
+#printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+}
+
+
+::-webkit-scrollbar {
+    width: 0; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
